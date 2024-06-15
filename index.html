@@ -1,311 +1,345 @@
 <style>
 body{
   font-family: Arial;
+  background: #000;
+  color: white;
 }
 </style>
-<div style="background: lightgray;">
-  <h3 style="background: white; text-align: center; margin: 5px 0; padding: 5px;">Clear Script</h3>
-  <div style="border: 1px solid gray; border-radius: 10px; padding: 10px; width: 80%; margin: 10px auto; background: white;">
-    <p class="script">delete from TRS_DETAILS;</p>
-    <p class="script">delete from TRS_MAIN_COMMENT;</p>
-    <p class="script">delete from TRS_MAIN;</p>
-    <p class="script">delete from PRJ_TASK_MEM;</p>
-    <p class="script">delete from PRJ_TASK_LST;</p>
-    <p class="script">delete from PRJ_MEM;</p>
-    <p class="script">delete from PRJ_MASTER;</p>
-    
-    
-    <p class="script">delete from FEEDBACK_RESPONSE_TXT;</p>
-    <p class="script">delete from FEEDBACK_Q_RESPONSE;</p>
-    <p class="script">delete from FEEDBACK_DATA;</p>
-    <p class="script">delete from SURVEY_APPLICABLE_CATEGORY;</p>
-    <p class="script">delete from SURVEY_APPLICABLE_NAME;</p>
-    <p class="script">delete from SURVEY_APPLICABLE_ROLE;</p>
-    <p class="script">delete from survey_QLIST;</p>
-    <p class="script">delete from Survey;</p>
-    
-    
-    <p class="script">delete from RULE_STEP;</p>
-    <p class="script">delete from RULE;</p>
-    
-    
-    <p class="script">delete from SR_TEMPLATE_DYN_FIELDS;</p>
-    <p class="script">delete from SR_DYN_FIELD_VAL;</p>
-    <p class="script">delete from Service_Request_Template;</p>
-    
-    
-    <p class="script">delete from CI_ITEM_SR_REL;</p>
-    <p class="script">delete from CONTRACT_SR_REL;</p>
-    <p class="script">delete from Service_Request_Ticket;</p>
-    <p class="script">delete from TICKET_QUEUE;</p>
-    <p class="script">delete from TCKT_FILE_ATTACHMENT;</p>
-    <p class="script">delete from SR_watcher;</p>
-    <p class="script">delete from SR_Ticket_Comment;</p>
-    <p class="script">delete from SR_History;</p>
-    <p class="script">delete from SR_Comment;</p>
-    <p class="script">delete from EML_TCKT_FILE_ATTACHMENT;</p>
-    <p class="script">delete from Service_Request;</p>
-    
-    
-    <p class="script">delete from SR_EXT_ESCALATION_LOG;</p>
-    <p class="script">delete from SR_ESCALATION_LOG;</p>
-    <p class="script">delete from SLA_SUMMARY;</p>
-    <p class="script">delete from SLA_MASTER;</p>
-    
-    
-    <p class="script">delete from KB_Term_Map;</p>
-    <p class="script">delete from KB;</p>
-    
-    
-    
-    <p class="script">delete from agnt_asset_dtl;</p>
-    <p class="script">delete from al_hst_name;</p>
-    <p class="script">delete from al_hst_name_config;</p>
-    <p class="script">delete from al_ip_addr_range;</p>
-    <p class="script">delete from al_ip_lst;</p>
-    <p class="script">delete from al_ip_lst_config;</p>
-    <p class="script">delete from alert_msg_dtl;</p>
-    
-    <p class="script">delete from audit_asset_dtls;</p>
-    <p class="script">delete from audit_log_dtls;</p>
-    <p class="script">delete from audit_rslt_asset_dtls;</p>
-    <p class="script">delete from barcode_hist;</p>
-    
-    <p class="script">delete from contract_ciitem;</p>
-    <p class="script">delete from contract_ciitem_history;</p>
-    <p class="script">delete from contract_due_expiry;</p>
-    <p class="script">delete from contract_file_attachment;</p>
-    <p class="script">delete from contract_history;</p>
-    <p class="script">delete from contract_sr_rel;</p>
-    <p class="script">delete from contract_watcher;</p>
-    <p class="script">delete from data_upload_log;</p>
-    
-    <p class="script">delete from hw_asst_relation;</p>
-    <p class="script">delete from hw_cpu_dtl;</p>
-    <p class="script">delete from hw_expense;</p>
-    <p class="script">delete from hw_financial_dtls;</p>
-    <p class="script">delete from hw_last_scan_history;</p>
-    <p class="script">delete from hw_location;</p>
-    <p class="script">delete from hw_nic_dtls;</p>
-    
-    <p class="script">delete from hw_nw_scan_history;</p>
-    <p class="script">delete from hw_partition;</p>
-    <p class="script">delete from hw_sw_rel;</p>
-    <p class="script">delete from hw_sw_rel_staging;</p>
-    <p class="script">delete from hw_user_accnt;</p>
-    <p class="script">delete from hw_user_relation;</p>
-    <p class="script">delete from hw_warranty;</p>
-    <p class="script">delete from hwciitem_file_attachment;</p>
-    <p class="script">delete from hw_dyn_fields;</p>
-    <p class="script">delete from patch_detail;</p>
-    
-    <p class="script">delete from hwitem_master_extra_info;</p>
-    <p class="script">delete from hwitem_ram_dtl_hist;</p>
-    <p class="script">delete from hwitem_ram_dtl;</p>
-    <p class="script">delete from last_scan_history;</p>
-    <p class="script">delete from notification_agents;</p>
-    <p class="script">delete from patch_detail;</p>
-    <p class="script">delete from qrcode_scan_detail;</p>
-    <p class="script">delete from remote_control_log;</p>
-    <p class="script">delete from scan_code_format;</p>
-    <p class="script">delete from scan_log_dtls;</p>
-    <p class="script">delete from swciitem_file_attachment;</p>
-    
-    <p class="script">delete from switem_master_staging;</p>
-    <p class="script">delete from user_audit_log;</p>
-    
-    <p class="script">delete from lnx_hw_sw;</p>
-    <p class="script">delete from mac_hw_sw;</p>
-    
-    <p class="script">delete from lnx_sw;</p>
-    <p class="script">delete from mac_sw;</p>
-    <p class="script">delete from switem_master;</p>
-    <p class="script">delete from hw_non_it;</p>
-    <p class="script">delete from hwitem_master;</p>
-    <p class="script">delete from contract;</p>
-    
-    
-    <p class="script">delete from remote_agnt_deployment_log;</p>
-    <p class="script">delete from remote_consl_log;</p>
-    <p class="script">delete from remote_control_log;</p>
-    <p class="script">delete from remote_control_type;</p>
-    <p class="script">delete from remote_session_log;</p>
-    
-    <p class="script">delete from netmnt_agnt_deployment_log;</p>
-    <p class="script">delete from nw_mntr_log;</p>
-    <p class="script">delete from nw_mntr_master;</p>
-    
-    <p class="script">delete from pat_hw_que;</p>
-    <p class="script">delete from pat_hw_rslt;</p>
-    <p class="script">delete from pat_hw_rslt_temp;</p>
-    <p class="script">delete from pat_scan_date;</p>
-    <p class="script">delete from pat_system_dtl;</p>
-    <p class="script">delete from patch_agent_dtl;</p>
-    <p class="script">delete from patch_agent_hw;</p>
-    <p class="script">delete from patch_agent_queue;</p>
-    <p class="script">delete from patch_agnt_deployment_log;</p>
-    <p class="script">delete from patch_detail;</p>
-    <p class="script">delete from patch_master;</p>
-    <p class="script">delete from patch_purge_history;</p>
-    <p class="script">delete from patch_queue;</p>
-    <p class="script">delete from patch_test_agent_hw;</p>
-    
-    <p class="script">delete from wsus_classification_dtls;</p>
-    <p class="script">delete from wsus_update_dtls;</p>
-    <p class="script">delete from wsus_update_patch_rel;</p>
-    <p class="script">delete from wsus_update_type;</p>
-    <p class="script">delete from wsus_update_url;</p>
-    
-    <p class="script">delete from wg_asset_grp;</p>
-    <p class="script">delete from wg_grp_master;</p>
-    
-    
-    
-    
-    
-    
-    
-    
-    <p class="script">delete from change_asset_rel;</p>
-    <p class="script">delete from change_basic_attachment;</p>
-    <p class="script">delete from change_history;</p>
-    <p class="script">delete from change_master_template;</p>
-    <p class="script">delete from change_notes;</p>
-    <p class="script">delete from change_project;</p>
-    <p class="script">delete from change_ser_affected;</p>
-    <p class="script">delete from change_status_comment;</p>
-    <p class="script">delete from chng_task_attachment;</p>
-    <p class="script">delete from change_tasklog;</p>
-    <p class="script">delete from change_worklog;</p>
-    <p class="script">delete from chng_backup_attachment;</p>
-    <p class="script">delete from chng_backup_plan;</p>
-    <p class="script">delete from chng_check_list_attachment;</p>
-    <p class="script">delete from chng_check_list;</p>
-    <p class="script">delete from chng_field_val;</p>
-    <p class="script">delete from chng_dyn_fields;</p>
-    <p class="script">delete from chng_dyn_fld_hist;</p>
-    <p class="script">delete from chng_incident_req;</p>
-    <p class="script">delete from chngt_impact_attachment;</p>
-    <p class="script">delete from chng_impact;</p>
-    <p class="script">delete from chng_problem;</p>
-    <p class="script">delete from chng_review_attachment;</p>
-    <p class="script">delete from change_review;</p>
-    <p class="script">delete from chng_rplan_attachment;</p>
-    <p class="script">delete from chng_root_plan;</p>
-    <p class="script">delete from chng_ser_affected_temp;</p>
-    <p class="script">delete from chng_close;</p>
-    <p class="script">delete from chng_downtime;</p>
-    <p class="script">delete from itl_chng_sla_escalation_log;</p>
-    <p class="script">delete from itl_chng_email_log;</p>
-    <p class="script">delete from change_master;</p>
-    
-    <p class="script">delete from chngtemp_rel_role_users;</p>
-    <p class="script">delete from chng_temp_field_val;</p>
-    <p class="script">delete from chng_temp_dyn_fields;</p>
-    <p class="script">delete from chng_temp_tasklog;</p>
-    
-    <p class="script">delete from change_sla_escalation_tech;</p>
-    <p class="script">delete from change_sla_escalation_dtls;</p>
-    <p class="script">delete from change_sla_criteria;</p>
-    <p class="script">delete from change_sla;</p>
-    
-    <p class="script">delete from cab_members;</p>
-    <p class="script">delete from cab;</p>
-    
-    
-    <p class="script">delete from change_role_permissions;</p>
-    <p class="script">delete from change_role_users;</p>
-    <p class="script">delete from change_role;</p>
-    
-    
-    <p class="script">delete from incdnt_asset_rel;</p>
-    <p class="script">delete from incdnt_cntrct_rel;</p>
-    <p class="script">delete from incdnt_project;</p>
-    <p class="script">delete from itl_req_email_log;</p>
-    <p class="script">delete from sr_incdnt_field_val;</p>
-    <p class="script">delete from sr_incdnt_dyn_fld_hist;</p>
-    <p class="script">delete from sreq_inc_attachment;</p>
-    <p class="script">delete from sreq_inc_comment;</p>
-    <p class="script">delete from sreq_inc_history;</p>
-    <p class="script">delete from sreq_inc_resltion_attachment;</p>
-    <p class="script">delete from sreq_inc_resolution;</p>
-    <p class="script">delete from sreq_inc_task_attachment;</p>
-    <p class="script">delete from sreq_inc_tasklog;</p>
-    <p class="script">delete from sreq_inc_worklog;</p>
-    <p class="script">delete from sreq_inc_watcher;</p>
-    <p class="script">delete from sreqinc_temp_tasklog;</p>
-    <p class="script">delete from srinc_rel_srinc;</p>
-    <p class="script">delete from ser_req_incident;</p>
-    <p class="script">delete from srinc_temp_field_val;</p>
-    <p class="script">delete from sr_incdnt_dyn_fields;</p>
-    <p class="script">delete from sreq_inc_temp;</p>
-    
-    <p class="script">delete from itl_sla_escalation_log;</p>
-    <p class="script">delete from itl_sla_escalation_dtls;</p>
-    <p class="script">delete from itl_sla_criteria;</p>
-    <p class="script">delete from itl_sla_criteria;</p>
-    <p class="script">delete from itl_sla;</p>
-    
-    
-    
-    <p class="script">delete from prblm_asset_rel;</p>
-    <p class="script">delete from prblm_attachment;</p>
-    <p class="script">delete from prblm_comment;</p>
-    <p class="script">delete from prblm_field_val;</p>
-    <p class="script">delete from prblm_history;</p>
-    <p class="script">delete from prblm_impact_attachment;</p>
-    <p class="script">delete from prblm_impact;</p>
-    <p class="script">delete from prblm_incident_req;</p>
-    <p class="script">delete from prblm_notification_log;</p>
-    <p class="script">delete from prblm_project;</p>
-    <p class="script">delete from prblm_resn_attachment;</p>
-    <p class="script">delete from prblm_rtcause_attachment;</p>
-    <p class="script">delete from prblm_rtcause;</p>
-    <p class="script">delete from prblm_ser_affected;</p>
-    <p class="script">delete from prblm_ser_offrd;</p>
-    <p class="script">delete from prblm_sol_resln_keyword;</p>
-    <p class="script">delete from prblm_sol_resln_owner;</p>
-    <p class="script">delete from prblm_sol_resln;</p>
-    <p class="script">delete from prblm_sol_wa_keyword;</p>
-    <p class="script">delete from prblm_sol_wa_owner;</p>
-    <p class="script">delete from prblm_sol_wa_attachment;</p>
-    <p class="script">delete from prblm_sol_wa;</p>
-    <p class="script">delete from itl_prblm_email_log;</p>
-    <p class="script">delete from prblm_symp_attachment;</p>
-    <p class="script">delete from prblm_symptoms;</p>
-    <p class="script">delete from prblm_task_attachment;</p>
-    <p class="script">delete from prblm_tasklog;</p>
-    <p class="script">delete from prblm_worklog;</p>
-    <p class="script">delete from problem;</p>
-    
-    <p class="script">delete from prblm_dyn_fields;</p>
-    <p class="script">delete from prblm_dyn_fld_hist;</p>
-    
-    
-    <p class="script">delete from sol_wiki_attachment;</p>
-    <p class="script">delete from sol_wiki_cat;</p>
-    <p class="script">delete from sol_wiki_keyword;</p>
-    <p class="script">delete from sol_wiki_location;</p>
-    <p class="script">delete from sol_wiki_owner;</p>
-    <p class="script">delete from sol_wiki_role;</p>
-    <p class="script">delete from solution_wiki;</p>
-    <p class="script">delete from tasklog_template;</p>
-    
-    
-    <p class="script">delete from pur_items;</p>
-    <p class="script">delete from cnt_pur_ordr;</p>
-    <p class="script">delete from pur_ordr;</p>
-    <p class="script">delete from vendor_addrid;</p>
-    <p class="script">delete from vendor;</p>
-    <p class="script">delete from prd_type;</p>
-    
-    
-    
-    
-    <p class="script">delete from USER_AUDIT_LOG;</p>
-    <p class="script">delete from account;</p>
-    <p class="script">delete from USER_ROLES where username not in ('admin','u1');</p>
-    <p class="script">delete from USER where username not in ('admin','u1');</p>
+<script>
+    function copyText() {
+		try {
+			/* Get the text field */
+			var textToCopy = document.getElementById("scripts");
+
+			/* Select the text field */
+			var range = document.createRange();
+			range.selectNode(textToCopy);
+			window.getSelection().removeAllRanges();
+			window.getSelection().addRange(range);
+
+			/* Copy the text inside the text field */
+			document.execCommand("copy");
+
+			/* Alert the copied text */
+			//alert("Copied the text: " + textToCopy.textContent);
+			const copiedText = textToCopy.textContent;
+			//console.log(copiedText)
+			alert('Copied')
+		} catch(err) {
+			console.error(err)
+			alert('Error copying script.. Try selecting text and Ctrl + C')
+		}
+		
+    }
+</script>
+<div style="">
+	<h2 style="text-align: center;">
+		<span style="background: white;font-size: 20;color: black;margin: 5px auto;padding: 5px 10px;border-radius: 15px;">Clear Script</span>
+	</h2>
+  
+  <div style="font-family: Consolas;border: 1px solid gray;border-radius: 10px;padding: 10px;width: 90%;margin: 10px auto;">
+	<p style="text-align: right; margin: 5px 0;"><span style="background: white; color: black; padding: 3px 5px; font-size: 12px;" onclick="copyText()">Copy</span></p>
+	<div id="scripts">
+		<p class="script">DELETE FROM TRS_DETAILS;</p>
+		<p class="script">DELETE FROM TRS_MAIN_COMMENT;</p>
+		<p class="script">DELETE FROM TRS_MAIN;</p>
+		<p class="script">DELETE FROM PRJ_TASK_MEM;</p>
+		<p class="script">DELETE FROM PRJ_TASK_LST;</p>
+		<p class="script">DELETE FROM PRJ_MEM;</p>
+		<p class="script">DELETE FROM PRJ_MASTER;</p>
+		
+		
+		<p class="script">DELETE FROM FEEDBACK_RESPONSE_TXT;</p>
+		<p class="script">DELETE FROM FEEDBACK_Q_RESPONSE;</p>
+		<p class="script">DELETE FROM FEEDBACK_DATA;</p>
+		<p class="script">DELETE FROM SURVEY_APPLICABLE_CATEGORY;</p>
+		<p class="script">DELETE FROM SURVEY_APPLICABLE_NAME;</p>
+		<p class="script">DELETE FROM SURVEY_APPLICABLE_ROLE;</p>
+		<p class="script">DELETE FROM survey_QLIST;</p>
+		<p class="script">DELETE FROM Survey;</p>
+		
+		
+		<p class="script">DELETE FROM RULE_STEP;</p>
+		<p class="script">DELETE FROM RULE;</p>
+		
+		
+		<p class="script">DELETE FROM SR_TEMPLATE_DYN_FIELDS;</p>
+		<p class="script">DELETE FROM SR_DYN_FIELD_VAL;</p>
+		<p class="script">DELETE FROM Service_Request_Template;</p>
+		
+		
+		<p class="script">DELETE FROM CI_ITEM_SR_REL;</p>
+		<p class="script">DELETE FROM CONTRACT_SR_REL;</p>
+		<p class="script">DELETE FROM Service_Request_Ticket;</p>
+		<p class="script">DELETE FROM TICKET_QUEUE;</p>
+		<p class="script">DELETE FROM TCKT_FILE_ATTACHMENT;</p>
+		<p class="script">DELETE FROM SR_watcher;</p>
+		<p class="script">DELETE FROM SR_Ticket_Comment;</p>
+		<p class="script">DELETE FROM SR_History;</p>
+		<p class="script">DELETE FROM SR_Comment;</p>
+		<p class="script">DELETE FROM EML_TCKT_FILE_ATTACHMENT;</p>
+		<p class="script">DELETE FROM Service_Request;</p>
+		
+		
+		<p class="script">DELETE FROM SR_EXT_ESCALATION_LOG;</p>
+		<p class="script">DELETE FROM SR_ESCALATION_LOG;</p>
+		<p class="script">DELETE FROM SLA_SUMMARY;</p>
+		<p class="script">DELETE FROM SLA_MASTER;</p>
+		
+		
+		<p class="script">DELETE FROM KB_Term_Map;</p>
+		<p class="script">DELETE FROM KB;</p>
+		
+		
+		
+		<p class="script">DELETE FROM agnt_asset_dtl;</p>
+		<p class="script">DELETE FROM al_hst_name;</p>
+		<p class="script">DELETE FROM al_hst_name_config;</p>
+		<p class="script">DELETE FROM al_ip_addr_range;</p>
+		<p class="script">DELETE FROM al_ip_lst;</p>
+		<p class="script">DELETE FROM al_ip_lst_config;</p>
+		<p class="script">DELETE FROM alert_msg_dtl;</p>
+		
+		<p class="script">DELETE FROM audit_asset_dtls;</p>
+		<p class="script">DELETE FROM audit_log_dtls;</p>
+		<p class="script">DELETE FROM audit_rslt_asset_dtls;</p>
+		<p class="script">DELETE FROM barcode_hist;</p>
+		
+		<p class="script">DELETE FROM contract_ciitem;</p>
+		<p class="script">DELETE FROM contract_ciitem_history;</p>
+		<p class="script">DELETE FROM contract_due_expiry;</p>
+		<p class="script">DELETE FROM contract_file_attachment;</p>
+		<p class="script">DELETE FROM contract_history;</p>
+		<p class="script">DELETE FROM contract_sr_rel;</p>
+		<p class="script">DELETE FROM contract_watcher;</p>
+		<p class="script">DELETE FROM data_upload_log;</p>
+		
+		<p class="script">DELETE FROM hw_asst_relation;</p>
+		<p class="script">DELETE FROM hw_cpu_dtl;</p>
+		<p class="script">DELETE FROM hw_expense;</p>
+		<p class="script">DELETE FROM hw_financial_dtls;</p>
+		<p class="script">DELETE FROM hw_last_scan_history;</p>
+		<p class="script">DELETE FROM hw_location;</p>
+		<p class="script">DELETE FROM hw_nic_dtls;</p>
+		
+		<p class="script">DELETE FROM hw_nw_scan_history;</p>
+		<p class="script">DELETE FROM hw_partition;</p>
+		<p class="script">DELETE FROM hw_sw_rel;</p>
+		<p class="script">DELETE FROM hw_sw_rel_staging;</p>
+		<p class="script">DELETE FROM hw_user_accnt;</p>
+		<p class="script">DELETE FROM hw_user_relation;</p>
+		<p class="script">DELETE FROM hw_warranty;</p>
+		<p class="script">DELETE FROM hwciitem_file_attachment;</p>
+		<p class="script">DELETE FROM hw_dyn_fields;</p>
+		<p class="script">DELETE FROM patch_detail;</p>
+		
+		<p class="script">DELETE FROM hwitem_master_extra_info;</p>
+		<p class="script">DELETE FROM hwitem_ram_dtl_hist;</p>
+		<p class="script">DELETE FROM hwitem_ram_dtl;</p>
+		<p class="script">DELETE FROM last_scan_history;</p>
+		<p class="script">DELETE FROM notification_agents;</p>
+		<p class="script">DELETE FROM patch_detail;</p>
+		<p class="script">DELETE FROM qrcode_scan_detail;</p>
+		<p class="script">DELETE FROM remote_control_log;</p>
+		<p class="script">DELETE FROM scan_code_format;</p>
+		<p class="script">DELETE FROM scan_log_dtls;</p>
+		<p class="script">DELETE FROM swciitem_file_attachment;</p>
+		
+		<p class="script">DELETE FROM switem_master_staging;</p>
+		<p class="script">DELETE FROM user_audit_log;</p>
+		
+		<p class="script">DELETE FROM lnx_hw_sw;</p>
+		<p class="script">DELETE FROM mac_hw_sw;</p>
+		
+		<p class="script">DELETE FROM lnx_sw;</p>
+		<p class="script">DELETE FROM mac_sw;</p>
+		<p class="script">DELETE FROM switem_master;</p>
+		<p class="script">DELETE FROM hw_non_it;</p>
+		<p class="script">DELETE FROM hwitem_master;</p>
+		<p class="script">DELETE FROM contract;</p>
+		
+		
+		<p class="script">DELETE FROM remote_agnt_deployment_log;</p>
+		<p class="script">DELETE FROM remote_consl_log;</p>
+		<p class="script">DELETE FROM remote_control_log;</p>
+		<p class="script">DELETE FROM remote_control_type;</p>
+		<p class="script">DELETE FROM remote_session_log;</p>
+		
+		<p class="script">DELETE FROM netmnt_agnt_deployment_log;</p>
+		<p class="script">DELETE FROM nw_mntr_log;</p>
+		<p class="script">DELETE FROM nw_mntr_master;</p>
+		
+		<p class="script">DELETE FROM pat_hw_que;</p>
+		<p class="script">DELETE FROM pat_hw_rslt;</p>
+		<p class="script">DELETE FROM pat_hw_rslt_temp;</p>
+		<p class="script">DELETE FROM pat_scan_date;</p>
+		<p class="script">DELETE FROM pat_system_dtl;</p>
+		<p class="script">DELETE FROM patch_agent_dtl;</p>
+		<p class="script">DELETE FROM patch_agent_hw;</p>
+		<p class="script">DELETE FROM patch_agent_queue;</p>
+		<p class="script">DELETE FROM patch_agnt_deployment_log;</p>
+		<p class="script">DELETE FROM patch_detail;</p>
+		<p class="script">DELETE FROM patch_master;</p>
+		<p class="script">DELETE FROM patch_purge_history;</p>
+		<p class="script">DELETE FROM patch_queue;</p>
+		<p class="script">DELETE FROM patch_test_agent_hw;</p>
+		
+		<p class="script">DELETE FROM wsus_classification_dtls;</p>
+		<p class="script">DELETE FROM wsus_update_dtls;</p>
+		<p class="script">DELETE FROM wsus_update_patch_rel;</p>
+		<p class="script">DELETE FROM wsus_update_type;</p>
+		<p class="script">DELETE FROM wsus_update_url;</p>
+		
+		<p class="script">DELETE FROM wg_asset_grp;</p>
+		<p class="script">DELETE FROM wg_grp_master;</p>
+		
+		
+		
+		
+		
+		
+		
+		
+		<p class="script">DELETE FROM change_asset_rel;</p>
+		<p class="script">DELETE FROM change_basic_attachment;</p>
+		<p class="script">DELETE FROM change_history;</p>
+		<p class="script">DELETE FROM change_master_template;</p>
+		<p class="script">DELETE FROM change_notes;</p>
+		<p class="script">DELETE FROM change_project;</p>
+		<p class="script">DELETE FROM change_ser_affected;</p>
+		<p class="script">DELETE FROM change_status_comment;</p>
+		<p class="script">DELETE FROM chng_task_attachment;</p>
+		<p class="script">DELETE FROM change_tasklog;</p>
+		<p class="script">DELETE FROM change_worklog;</p>
+		<p class="script">DELETE FROM chng_backup_attachment;</p>
+		<p class="script">DELETE FROM chng_backup_plan;</p>
+		<p class="script">DELETE FROM chng_check_list_attachment;</p>
+		<p class="script">DELETE FROM chng_check_list;</p>
+		<p class="script">DELETE FROM chng_field_val;</p>
+		<p class="script">DELETE FROM chng_dyn_fields;</p>
+		<p class="script">DELETE FROM chng_dyn_fld_hist;</p>
+		<p class="script">DELETE FROM chng_incident_req;</p>
+		<p class="script">DELETE FROM chngt_impact_attachment;</p>
+		<p class="script">DELETE FROM chng_impact;</p>
+		<p class="script">DELETE FROM chng_problem;</p>
+		<p class="script">DELETE FROM chng_review_attachment;</p>
+		<p class="script">DELETE FROM change_review;</p>
+		<p class="script">DELETE FROM chng_rplan_attachment;</p>
+		<p class="script">DELETE FROM chng_root_plan;</p>
+		<p class="script">DELETE FROM chng_ser_affected_temp;</p>
+		<p class="script">DELETE FROM chng_close;</p>
+		<p class="script">DELETE FROM chng_downtime;</p>
+		<p class="script">DELETE FROM itl_chng_sla_escalation_log;</p>
+		<p class="script">DELETE FROM itl_chng_email_log;</p>
+		<p class="script">DELETE FROM change_master;</p>
+		
+		<p class="script">DELETE FROM chngtemp_rel_role_users;</p>
+		<p class="script">DELETE FROM chng_temp_field_val;</p>
+		<p class="script">DELETE FROM chng_temp_dyn_fields;</p>
+		<p class="script">DELETE FROM chng_temp_tasklog;</p>
+		
+		<p class="script">DELETE FROM change_sla_escalation_tech;</p>
+		<p class="script">DELETE FROM change_sla_escalation_dtls;</p>
+		<p class="script">DELETE FROM change_sla_criteria;</p>
+		<p class="script">DELETE FROM change_sla;</p>
+		
+		<p class="script">DELETE FROM cab_members;</p>
+		<p class="script">DELETE FROM cab;</p>
+		
+		
+		<p class="script">DELETE FROM change_role_permissions;</p>
+		<p class="script">DELETE FROM change_role_users;</p>
+		<p class="script">DELETE FROM change_role;</p>
+		
+		
+		<p class="script">DELETE FROM incdnt_asset_rel;</p>
+		<p class="script">DELETE FROM incdnt_cntrct_rel;</p>
+		<p class="script">DELETE FROM incdnt_project;</p>
+		<p class="script">DELETE FROM itl_req_email_log;</p>
+		<p class="script">DELETE FROM sr_incdnt_field_val;</p>
+		<p class="script">DELETE FROM sr_incdnt_dyn_fld_hist;</p>
+		<p class="script">DELETE FROM sreq_inc_attachment;</p>
+		<p class="script">DELETE FROM sreq_inc_comment;</p>
+		<p class="script">DELETE FROM sreq_inc_history;</p>
+		<p class="script">DELETE FROM sreq_inc_resltion_attachment;</p>
+		<p class="script">DELETE FROM sreq_inc_resolution;</p>
+		<p class="script">DELETE FROM sreq_inc_task_attachment;</p>
+		<p class="script">DELETE FROM sreq_inc_tasklog;</p>
+		<p class="script">DELETE FROM sreq_inc_worklog;</p>
+		<p class="script">DELETE FROM sreq_inc_watcher;</p>
+		<p class="script">DELETE FROM sreqinc_temp_tasklog;</p>
+		<p class="script">DELETE FROM srinc_rel_srinc;</p>
+		<p class="script">DELETE FROM ser_req_incident;</p>
+		<p class="script">DELETE FROM srinc_temp_field_val;</p>
+		<p class="script">DELETE FROM sr_incdnt_dyn_fields;</p>
+		<p class="script">DELETE FROM sreq_inc_temp;</p>
+		
+		<p class="script">DELETE FROM itl_sla_escalation_log;</p>
+		<p class="script">DELETE FROM itl_sla_escalation_dtls;</p>
+		<p class="script">DELETE FROM itl_sla_criteria;</p>
+		<p class="script">DELETE FROM itl_sla_criteria;</p>
+		<p class="script">DELETE FROM itl_sla;</p>
+		
+		
+		
+		<p class="script">DELETE FROM prblm_asset_rel;</p>
+		<p class="script">DELETE FROM prblm_attachment;</p>
+		<p class="script">DELETE FROM prblm_comment;</p>
+		<p class="script">DELETE FROM prblm_field_val;</p>
+		<p class="script">DELETE FROM prblm_history;</p>
+		<p class="script">DELETE FROM prblm_impact_attachment;</p>
+		<p class="script">DELETE FROM prblm_impact;</p>
+		<p class="script">DELETE FROM prblm_incident_req;</p>
+		<p class="script">DELETE FROM prblm_notification_log;</p>
+		<p class="script">DELETE FROM prblm_project;</p>
+		<p class="script">DELETE FROM prblm_resn_attachment;</p>
+		<p class="script">DELETE FROM prblm_rtcause_attachment;</p>
+		<p class="script">DELETE FROM prblm_rtcause;</p>
+		<p class="script">DELETE FROM prblm_ser_affected;</p>
+		<p class="script">DELETE FROM prblm_ser_offrd;</p>
+		<p class="script">DELETE FROM prblm_sol_resln_keyword;</p>
+		<p class="script">DELETE FROM prblm_sol_resln_owner;</p>
+		<p class="script">DELETE FROM prblm_sol_resln;</p>
+		<p class="script">DELETE FROM prblm_sol_wa_keyword;</p>
+		<p class="script">DELETE FROM prblm_sol_wa_owner;</p>
+		<p class="script">DELETE FROM prblm_sol_wa_attachment;</p>
+		<p class="script">DELETE FROM prblm_sol_wa;</p>
+		<p class="script">DELETE FROM itl_prblm_email_log;</p>
+		<p class="script">DELETE FROM prblm_symp_attachment;</p>
+		<p class="script">DELETE FROM prblm_symptoms;</p>
+		<p class="script">DELETE FROM prblm_task_attachment;</p>
+		<p class="script">DELETE FROM prblm_tasklog;</p>
+		<p class="script">DELETE FROM prblm_worklog;</p>
+		<p class="script">DELETE FROM problem;</p>
+		
+		<p class="script">DELETE FROM prblm_dyn_fields;</p>
+		<p class="script">DELETE FROM prblm_dyn_fld_hist;</p>
+		
+		
+		<p class="script">DELETE FROM sol_wiki_attachment;</p>
+		<p class="script">DELETE FROM sol_wiki_cat;</p>
+		<p class="script">DELETE FROM sol_wiki_keyword;</p>
+		<p class="script">DELETE FROM sol_wiki_location;</p>
+		<p class="script">DELETE FROM sol_wiki_owner;</p>
+		<p class="script">DELETE FROM sol_wiki_role;</p>
+		<p class="script">DELETE FROM solution_wiki;</p>
+		<p class="script">DELETE FROM tasklog_template;</p>
+		
+		
+		<p class="script">DELETE FROM pur_items;</p>
+		<p class="script">DELETE FROM cnt_pur_ordr;</p>
+		<p class="script">DELETE FROM pur_ordr;</p>
+		<p class="script">DELETE FROM vendor_addrid;</p>
+		<p class="script">DELETE FROM vendor;</p>
+		<p class="script">DELETE FROM prd_type;</p>
+		
+		
+		
+		
+		<p class="script">DELETE FROM USER_AUDIT_LOG;</p>
+		<p class="script">DELETE FROM account;</p>
+		<p class="script">DELETE FROM USER_ROLES where username not in ('admin','u1');</p>
+		<p class="script">DELETE FROM USER where username not in ('admin','u1');</p>
+	  </div>
   </div>
 </div>
-
